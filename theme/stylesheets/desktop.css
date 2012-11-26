@@ -1,0 +1,9 @@
+/*--------------------------------------------------------------
+ Application.css
+ Imports all stylesheets; sets defaults for bare elements
+ --------------------------------------------------------------*/
+
+@import 'application.css';
+@import 'desktop_layout.css';
+@import 'content.css';
+@import 'desktop_sidebar.css';

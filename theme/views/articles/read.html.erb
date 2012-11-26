@@ -30,14 +30,13 @@
   <% end -%>
 <% end -%>
 
+<%= render 'articles/comment_form' unless @article.comments_closed? %>
+<div id="comments"><fb:comments href="<%= CGI.escape(request.protocol + request.host_with_port + request.fullpath) %>" width="500px" numposts="10" css="http://textkrieg.de/stylesheets/theme/facebook.css?3"></fb:comments></div>
+
 <% if @article.allow_comments? or @article.published_comments.size > 0 -%>
 
   <% if !@article.comments_closed? and @article.published_comments.size > 0 %>
-    <h5><a name="comments"><%= _("Comments") %></a></h5>
-  <% end -%>
-
-  <% unless @article.comments_closed? %>
-    <p><a href="#commentform"><%= _("Leave a comment") %></a></p>
+    <h5><a name="comments"><%= _("Old Comments") %></a></h5>
   <% end -%>
 
   <div id="comments_div">
@@ -45,4 +44,3 @@
   </div>
 <% end -%>
 
-<%= render 'articles/comment_form' unless @article.comments_closed? %>

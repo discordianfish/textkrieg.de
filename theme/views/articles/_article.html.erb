@@ -1,11 +1,11 @@
 <div class="atomentry" id="article-<%= article.id %>">
   <h2 class="title">
     <%= (controller.action_name.include? 'permalink') ? article.title : link_to_permalink(article,article.title) %>
-    <%= content_tag(:span, article.published_comments.size, :class => 'comment_count') if article.published_comments.size > 0 %>
+    <%#= content_tag(:span, article.published_comments.size, :class => 'comment_count') if article.published_comments.size > 0 %>
+    <span class="comment_count"><fb:comments-count href="<%= article.permalink_url %>"></fb:comments-count></span>
   </h2>
 
   <p class="author">
-    <%= _("Posted by")%> <cite><%= author_link(article) %></cite>
     <abbr class="published" title="<%= article.published_at.xmlschema %>"><%= display_date_and_time article.published_at %></abbr>
   </p>
 
@@ -14,14 +14,32 @@
   </div>
 
   <ul class="meta">
-    <%= content_tag(:li, category_links(article).html_safe, :class => 'categories') unless article.categories.empty? %>
-    <%= content_tag(:li, tag_links(article).html_safe, :class => 'tags') unless article.tags.empty? %>
-    <li><%= _("Meta") %>
-      <%= trackbacks_link(article) << ',' if article.allow_pings? %>
-      <%= comments_link(article) << ',' if article.allow_comments? %>
-      <a href="<%= article.permalink_url %>" rel="bookmark"><%=_("permalink")%></a>,
-      <a href="<%= @auto_discovery_url_rss %>">rss</a>,
-      <a href="<%= @auto_discovery_url_atom %>">atom</a>
+    <li>
+        <a class="FlattrButton" style="display:none;"
+            href="<%= article.permalink_url %>"
+            title="<%= article.title %>"
+            rel="flattr;button:compact;<% unless article.categories.empty? %><%= article.categories.join(',') %><% end %>">
+            Flattr
+        </a>
     </li>
+    <li>
+        <iframe
+           src="http://www.facebook.com/plugins/like.php?href=<%= URI.escape(article.permalink_url) %>&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=21"
+           scrolling="no"
+           frameborder="0"
+           style="border:none; overflow:hidden; height:20px; width:90px" allowTransparency="true"></iframe>
+    
+        <%= content_tag(:li, category_links(article).html_safe, :class => 'categories') unless article.categories.empty? %>
+        <%= content_tag(:li, tag_links(article).html_safe, :class => 'tags') unless article.tags.empty? %>
+        <%= trackbacks_link(article) << ',' if article.allow_pings? %>
+        <%#= comments_link(article) if article.allow_comments? %>
+    </li>
+    <li>
+        <a href="https://twitter.com/share?url=<%= URI.escape(article.permalink_url) %>&via=bangpowwww&text=<%= URI.escape(article.title+':') %>" class="twitter-share-button">Tweet</a>
+    </li>
+    <li class="comments">
+        <a href="<%= article.permalink_url %>#comments"><fb:comments-count href="<%= article.permalink_url %>"></fb:comments-count> comments</a>
+    </li>
+
   </ul>
 </div>

@@ -1,40 +1,74 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
   <%= page_header %>
   <title><%=h page_title %></title>
-  <%= stylesheet_link_tag '/stylesheets/theme/application.css', :media => 'all' %>
+  <%= stylesheet_link_tag '/stylesheets/theme/desktop.css', :media => 'screen and (min-device-width: 901px)' %>
+  <%= stylesheet_link_tag '/stylesheets/theme/mobile.css', :media => 'handheld' %>
+  <%= stylesheet_link_tag '/stylesheets/theme/mobile.css', :media => 'only screen and (max-device-width: 900px)' %>
+  <script type="text/javascript" src="http://api.flattr.com/js/0.6/load.js?mode=auto&uid=bangpowwww&language=de_DE&category=text"></script>
+  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  <meta property="fb:app_id"    content="297175940322776"/>
+  <meta property="og:url"       content="<%= request.protocol + request.host_with_port + request.fullpath %>" />
+  <% if @article %>
+  <meta property="og:image"     content="<%= display_thumbnail @article %>" />
+  <% end %>
+  <meta property="og:title"     content="<%= h page_title %>" />
+  <meta property="og:site_name" content="Textkrieg" />
+  <meta property="og:type"      content="article" />
+  <meta name="keywords" content="Texter, Texterin, Berlin, Clara Hitzel, Social Media, Copywriter, bangpowwww, Musik, Journalist, Journalistin" />
+ 
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22856766-2']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    FB.Event.subscribe('edge.create', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+  </script>
+  
+  <meta name="viewport"      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=3.0, user-scalable=1, minimum-scale=0" />
 </head>
 
 <body>
+<div id="fb-root"></div>
 <div id="container">
-  <div id="header">
-    <h1><span><%= link_to this_blog.blog_name, this_blog.base_url %></span></h1>
-    <h2><%= this_blog.blog_subtitle %></h2>
-  </div>
-
   <div id="page">
+    <div id="sidebar">
+      <h1><span><%= link_to this_blog.blog_name, this_blog.base_url %></span></h1>
+      <!-- sidebar components -->
+      <%= render_sidebars %>
+
+    <a href="http://www.twitter.com/bangpowwww"><img src="/files/twitter.png" alt="Ada auf Twitter"/></a><br />
+    <a href="http://facebook.com/textkrieg"><img src="/files/facebook.png" alt="Ada auf Facebook"/></a><br />
+    <a href="https://soundcloud.com/bangpowwww"><img src="/files/soundcloud.png" alt="Ada auf SoundCloud"/></a><br />
+
+    </div>
     <div id="content">
       <%= yield %>
       <%= javascript_tag 'show_dates_as_local_time()' %>
     </div>
-
-    <div id="sidebar">
-      <!-- sidebar components -->
-      <%= render_sidebars %>
+    <div id="rightbar">
+    <% unless request.fullpath.starts_with?('/page') %>
+        <%= render_sidebar(RecentPostsSidebar.new) %>
+    <% end %>
     </div>
-    <br style="clear:both;" />
   </div>
-
   <div id="footer">
-    <hr />
-    <p><%= link_to this_blog.blog_name, this_blog.base_url %></p>
-    <ul>
-      <li>
-        <%= _("Powered by %s", link_to('typo', 'http://typosphere.org')) %> /
-        <%= _("styled with %s", link_to('scribbish', 'http://quotedprintable.com/pages/scribbish'))%>
-      </li>
-    </ul>
   </div>
 </div>
 </body>

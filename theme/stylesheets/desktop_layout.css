@@ -1,0 +1,107 @@
+/**
+ * Controls the main layout (width, height, margin, padding)
+ *
+ * #container
+ *   #header
+ *   #page
+ *     #content
+ *     #sidebar
+ *   #footer
+ */
+body {
+/*	text-align: center; */
+	margin: 0; /* padding: 1em; */
+    background-color: #eee;
+}
+
+#container {
+    max-width: 890px; 
+    min-height: 900px;
+    margin: auto auto;
+
+
+/*    padding-left: 1em;
+    padding-top: 1em;*/
+    padding: 1em;
+    background-color: #fff;
+}
+
+
+#header {
+	height: 60px;
+/*	margin: 0 0 15px; */
+    padding: 0;
+}
+
+#page {
+}
+
+/* FIXME , feels dirty - have to wrap all up in a container */
+h5 { max-width: 500px; }
+/* article */
+.atomentry {
+    max-width: 500px; 
+}
+
+/* page */
+#viewpage {
+    max-width: 700px; 
+    overflow: hidden;
+}
+/* comments */
+#comments_div {
+    max-width: 500px;
+}
+
+#viewpage img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+#sidebar {
+	max-width: 180px;
+    position: fixed;
+}
+
+#rightbar {
+    position: fixed;
+    width: 180px;
+    margin-left: 700px;
+}
+
+#footer {
+	height: 40px;
+	margin: 10px 0 0; padding: 10px 0 0;
+	clear:left;
+}
+
+/*--------------------------------------------------------------
+ Sidebar Alignment: you can have left or right
+ --------------------------------------------------------------*/
+
+/* BEGIN: Right Sidebar 
+#sidebar {
+	float: right; text-align: left;
+	padding-left: 15px;
+	border-left: 1px dotted #ddd;
+}
+#content {
+	float: left;
+	padding-left: 5px;
+}
+END: Right Sidebar */
+
+
+/* BEGIN: Left Sidebar */
+#sidebar {
+	float: left; text-align: left;
+/*	padding-right: 20px; */
+}
+
+#content {
+	float: left;
+    text-align: left;
+    margin-left: 180px;
+}
+/* END: Left Sidebar */

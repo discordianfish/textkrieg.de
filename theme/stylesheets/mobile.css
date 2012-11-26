@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+ Application.css
+ Imports all stylesheets; sets defaults for bare elements
+ --------------------------------------------------------------*/
+
+@import 'application.css'; 
+@import 'mobile_layout.css';
+@import 'content.css'; 
+@import 'mobile_sidebar.css';
+
+/* thats dirty an i'm ashamed */
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+#content h2 { text-align: left; }
