@@ -31,6 +31,15 @@
 
 #content {
     text-align: justify;
+    float: left;
+}
+
+#rightbar {
+    text-align: justify;
+}
+
+#rightbar .atomentry {
+    margin-bottom: 1em;
 }
 
 #content h1,
@@ -120,7 +129,7 @@
 	margin-bottom: 1em;
 }
 
-#content .atomentry .title {
+.atomentry .title {
 	margin: 0;
 	font-size: 16px;
 	font-weight: normal;
@@ -132,6 +141,14 @@
 	height: 30px;
 	overflow: hidden;
 }
+
+#rightbar .atomentry .title {
+        font-size: 14px;
+        margin: 0;
+        height: 30px;
+        overflow: hidden;
+}
+
 #content .atomentry .title a {
     color: #aaa;
 }
@@ -155,7 +172,10 @@
 }
 #content #index .atomentry .author {
 	margin: 0;
+}
 
+#rightbar .atomentry .author { 
+        margin: 0;
 }
 
 #content .atomentry .author cite a,

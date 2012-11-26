@@ -63,9 +63,16 @@
       <%= javascript_tag 'show_dates_as_local_time()' %>
     </div>
     <div id="rightbar">
-    <% unless request.fullpath.starts_with?('/page') %>
-        <%# render_sidebar(RecentPostsSidebar.new) %>
-	<%# render_sliding_posts(@articles) %>
+    <% unless request.fullpath == '/' %>
+      <% Article.find(:all, :conditions => ["published = ?", true], :order => 'published_at DESC', :limit => 14).each do |article| %>
+        <div class="atomentry">
+          <a href="<%= article.permalink_url %>">
+          <h2 class="title"><%= article.title %></h2>
+          <p class="author"><abbr class="published" title="<%= article.published_at.xmlschema %>"><%= display_date_and_time article.published_at %></abbr></p>
+          <%= render 'articles/article_excerpt', { :article => article } %>
+          </a>
+        </div>
+      <% end %>
     <% end %>
     </div>
   </div>

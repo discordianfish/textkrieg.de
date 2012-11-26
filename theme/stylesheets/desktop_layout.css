@@ -8,15 +8,13 @@
  *     #sidebar
  *   #footer
  */
+html { background-color: #fafafa }
 
 #container {
     margin: auto auto;
-
-
-    padding: 0.5em;
     background-color: #fff;
+    min-width: 900px;
 }
-
 #page {
 }
 
@@ -25,10 +23,16 @@
 .atomentry {
     width: 500px;
 }
+
+#rightbar .atomentry {
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+}
 #index .atomentry {
     display: inline-block;
     vertical-align: top;
-    width: 200px;
+    width: 240px;
 }
 
 /* page */
@@ -39,6 +43,8 @@
 #comments_div {
     max-width: 200px;
 }
+
+#rightbar img { width: 100% }
 #content img {
     width: 100%;
 }
@@ -53,11 +59,6 @@
     position: fixed;
 }
 
-#rightbar {
-    position: fixed;
-    width: 180px;
-    margin-left: 700px;
-}
 
 #footer {
 	height: 40px;
@@ -76,8 +77,6 @@
 }
 
 #content {
-/*	float: left; */
-/*    text-align: left; */
     margin-left: 150px;
 }
 /* END: Left Sidebar */
