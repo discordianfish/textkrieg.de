@@ -10,32 +10,19 @@
  --------------------------------------------------------------*/
 
 #header {
-	background: url(../../images/theme/header_shadow.gif) repeat-x left bottom;
-}
-
-#header a:link,
-#header a:visited {
-	color:#000;
-	text-decoration: none;
-}
-
-#header a:hover,
-#header a:active {
-	color:#930; background: transparent;
-	text-decoration: none;
+	margin-left: 180px;
+	height:
 }
 
 #header h1 {
-	font: bold 400% georgia, serif;
 	letter-spacing: -1px;
 	margin: 0;
-	float: left;
+/*	float: left; */
 }
 
 #header h2 {
-	font: normal 12px verdana, arial, sans-serif;
 	margin: 2.5em 0 0 0.8em;
-	float: left;
+/*	float: left; */
 }
 
 /*--------------------------------------------------------------
@@ -51,14 +38,9 @@
 #content h3,
 #content h4,
 #content h5 {
-/*	font-family: "lucidamac bold", "lucida grande", arial, sans-serif; */
-	letter-spacing: -1px;
-    font-family: "arial black";
 }
 
 #content h1 {
-    letter-spacing: -2pt;
-    font-family: "arial black", "lucidamac bold", "lucida grande", arial, sans-serif;;
     font-weight: 900;
     font-size: 30pt;
     line-height: 30pt;
@@ -134,21 +116,28 @@
 /* Article Entries - class names based on http://microformats.org/wiki/hatom] */
 .atomentry p a { border-bottom: 1px dotted black }
 #content .atomentry {
-	margin: 0 0 3em 0;
+	margin: 0.5em;
+	margin-bottom: 1em;
 }
 
 #content .atomentry .title {
-	font-size: 24px;
-	line-height: 94%;
-	letter-spacing: -1.5px;
 	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#content #index .atomentry .title {
+	font-size: 14px;
+	margin: 0;
+	height: 30px;
+	overflow: hidden;
 }
 #content .atomentry .title a {
     color: #aaa;
 }
 
 #content .atomentry .title a:visited {
-	color: #ddd;
+	color: #111;
 	text-decoration: none;
 }
 
@@ -160,11 +149,13 @@
 
 #content .atomentry .title .comment_count { color: #eee; }
 
+
 #content .atomentry .author {
 	color: #bbb;
-	font: normal 16px/14px "lucidamac bold", "lucida grande", arial, verdana, sans-serif;
-	letter-spacing: -1px;
-	margin: 0 0 1em;
+}
+#content #index .atomentry .author {
+	margin: 0;
+
 }
 
 #content .atomentry .author cite a,
@@ -174,8 +165,8 @@
 }
 
 #content .atomentry .author abbr { /* posted date */
-	font-weight: bold;
-	color: #ddd;
+	font-size: 10px;
+	color: #111;
 }
 
 #content .atomentry .content {}
@@ -284,6 +275,8 @@
 
 /* see sidebar.css */
 
+#sidebar {
+}
 #sidebar h3 a:hover,
 #sidebar h3 a:active {
 /*	background: transparent; text-decoration: underline; */
@@ -324,7 +317,6 @@
 }
 
 #sidebar .search .results p {
-	font: bold 14px "lucidamac bold", "lucida grande", verdana, arial, helvetica, sans-serif;
 	margin: 0 0 0.5em;
 }
 
@@ -409,6 +401,10 @@
 #footer li {
 	margin: 0; padding: 0 0 0 1em;
 	display: inline;
+}
+
+.pagination {
+	clear: both;
 }
 
 /* gallery */

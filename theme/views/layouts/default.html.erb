@@ -49,7 +49,7 @@
 <div id="container">
   <div id="page">
     <div id="sidebar">
-      <h1><span><%= link_to this_blog.blog_name, this_blog.base_url %></span></h1>
+      <h1><span><%= link_to "Text Krieg", this_blog.base_url %></span></h1> 
       <!-- sidebar components -->
       <%= render_sidebars %>
 
@@ -64,7 +64,8 @@
     </div>
     <div id="rightbar">
     <% unless request.fullpath.starts_with?('/page') %>
-        <%= render_sidebar(RecentPostsSidebar.new) %>
+        <%# render_sidebar(RecentPostsSidebar.new) %>
+	<%# render_sliding_posts(@articles) %>
     <% end %>
     </div>
   </div>

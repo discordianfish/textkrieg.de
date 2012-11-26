@@ -2,6 +2,17 @@
  Application.css
  Imports all stylesheets; sets defaults for bare elements
  --------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Faster+One);
+
+
+@font-face
+{
+	font-family: junction;
+	src: url('/files/fonts/junction.ttf'),
+     	url('/files/fonts/junction.eot'); /* IE9 */
+}
+
 
 @media print { #sidebar { display:none; }
                #content { float: none; width:90%; }
@@ -10,7 +21,7 @@
 
 body {
 /*	background: url(../../images/theme/background.gif) repeat-x left top; */
-    font: normal 12px "lucida grande", verdana, arial, helvetica, sans-serif;
+    font: normal 12px 'Raleway', "lucida grande", verdana, arial, helvetica, sans-serif; 
 }
 
 input,

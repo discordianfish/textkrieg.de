@@ -2,7 +2,7 @@
  Sidebar
  --------------------------------------------------------------*/
 #sidebar, #rightbar {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 #sidebar h1 {
@@ -10,9 +10,10 @@
     font-family: "arial black",arial,helvetica,sans-serif;
     text-align: left;
     font-weight: 700;
-    font-size: 36pt;
-    line-height: 30pt;
+    font-size: 30pt;
     margin: 0px;
+    width: 130px;
+	line-height: 33pt;
 }
 #sidebar h3 a:link,
 #sidebar h3 a:visited {

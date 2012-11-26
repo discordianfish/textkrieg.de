@@ -2,7 +2,6 @@
   <h2 class="title">
     <%= (controller.action_name.include? 'permalink') ? article.title : link_to_permalink(article,article.title) %>
     <%#= content_tag(:span, article.published_comments.size, :class => 'comment_count') if article.published_comments.size > 0 %>
-    <span class="comment_count"><fb:comments-count href="<%= article.permalink_url %>"></fb:comments-count></span>
   </h2>
 
   <p class="author">
@@ -12,8 +11,20 @@
   <div class="content">
     <%= render 'articles/protected_article_content', { :article => article } %>
   </div>
+  <% if request.fullpath != '/' %>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_pinterest_pinit"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50b28d13455aee5e"></script>
+<!-- AddThis Button END -->
+  <% end %>
 
-  <ul class="meta">
+<!-- FIXME: ONLY ON ARTICLES NOT INDEX  <ul class="meta">
     <li>
         <a class="FlattrButton" style="display:none;"
             href="<%= article.permalink_url %>"
@@ -41,5 +52,5 @@
         <a href="<%= article.permalink_url %>#comments"><fb:comments-count href="<%= article.permalink_url %>"></fb:comments-count> comments</a>
     </li>
 
-  </ul>
+  </ul> -->
 </div>
