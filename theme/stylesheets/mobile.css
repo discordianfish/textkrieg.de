@@ -1,18 +1,16 @@
-/*--------------------------------------------------------------
- Application.css
- Imports all stylesheets; sets defaults for bare elements
- --------------------------------------------------------------*/
-
-@import 'application.css'; 
-@import 'mobile_layout.css';
-@import 'content.css'; 
-@import 'mobile_sidebar.css';
-
-/* thats dirty an i'm ashamed */
-img
-{
-    max-width: 100%;
-    height: auto;
+#container {
 }
 
-#content h2 { text-align: left; }
+#sidebar li {
+	display: inline;
+	border-right: 1px solid black;
+	margin-right: 1em;
+}
+
+#content {
+    width: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,9 +1,75 @@
+/**
+ * Controls the main layout (width, height, margin, padding)
+ *
+ * #container
+ *   #header
+ *   #page
+ *     #content
+ *     #sidebar
+ *   #footer
+ */
+html { background-color: #fafafa }
+
+#container {
+    background-color: #fff;
+    min-width: 660px;
+}
+#page {
+}
+
+/* FIXME , feels dirty - have to wrap all up in a container */
+/* article */
+
+#rightbar .atomentry {
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+}
+#index .atomentry {
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+}
+
+/* page */
+#viewpage {
+    overflow: hidden;
+}
+/* comments */
+#comments_div {
+    max-width: 200px;
+}
+
+#rightbar img { width: 100% }
+
+#viewpage img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+#sidebar {
+    position: fixed;
+}
+
+
+#footer {
+	height: 40px;
+	margin: 10px 0 0; padding: 10px 0 0;
+	clear:left;
+}
+
 /*--------------------------------------------------------------
- Application.css
- Imports all stylesheets; sets defaults for bare elements
+ Sidebar Alignment: you can have left or right
  --------------------------------------------------------------*/
 
-@import 'application.css';
-@import 'desktop_layout.css';
-@import 'content.css';
-@import 'desktop_sidebar.css';
+/* BEGIN: Left Sidebar */
+#sidebar {
+/*	float: left; text-align: left; */
+/*	padding-right: 20px; */
+}
+
+#content {
+    margin-left: 150px;
+}
+/* END: Left Sidebar */

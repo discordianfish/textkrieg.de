@@ -3,9 +3,10 @@
 <head>
   <%= page_header %>
   <title><%=h page_title %></title>
-  <%= stylesheet_link_tag '/stylesheets/theme/desktop.css', :media => 'screen and (min-device-width: 901px)' %>
+  <%= stylesheet_link_tag '/stylesheets/theme/common.css' %>
+  <%= stylesheet_link_tag '/stylesheets/theme/desktop.css', :media => 'screen and (min-device-width: 661px)' %>
   <%= stylesheet_link_tag '/stylesheets/theme/mobile.css', :media => 'handheld' %>
-  <%= stylesheet_link_tag '/stylesheets/theme/mobile.css', :media => 'only screen and (max-device-width: 900px)' %>
+  <%= stylesheet_link_tag '/stylesheets/theme/mobile.css', :media => 'only screen and (max-device-width: 660px)' %>
   <script type="text/javascript" src="http://api.flattr.com/js/0.6/load.js?mode=auto&uid=bangpowwww&language=de_DE&category=text"></script>
   <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
   <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>

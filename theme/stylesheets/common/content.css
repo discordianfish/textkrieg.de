@@ -1,4 +1,3 @@
-
 .tweets {
     font-size: 2em;
     font-weight: 700;
@@ -296,6 +295,8 @@
 /* see sidebar.css */
 
 #sidebar {
+	background-color: white;
+	height: 100%;
 }
 #sidebar h3 a:hover,
 #sidebar h3 a:active {
