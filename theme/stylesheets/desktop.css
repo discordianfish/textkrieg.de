@@ -1,24 +1,7 @@
-/**
- * Controls the main layout (width, height, margin, padding)
- *
- * #container
- *   #header
- *   #page
- *     #content
- *     #sidebar
- *   #footer
- */
-html { background-color: #fafafa }
-
-#container {
+html {
     background-color: #fff;
     min-width: 660px;
 }
-#page {
-}
-
-/* FIXME , feels dirty - have to wrap all up in a container */
-/* article */
 
 #rightbar .atomentry {
     display: inline-block;
@@ -50,6 +33,7 @@ html { background-color: #fafafa }
 
 #sidebar {
     position: fixed;
+    width: 130px;
 }
 
 

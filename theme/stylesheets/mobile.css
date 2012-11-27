@@ -1,6 +1,3 @@
-#container {
-}
-
 #sidebar li {
 	display: inline;
 	border-right: 1px solid black;
@@ -8,9 +5,12 @@
 }
 
 #content {
-    width: 100%;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+#sidebar h1 {
+	display: inline
+}

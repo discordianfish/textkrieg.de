@@ -10,7 +10,6 @@
 
 #header {
 	margin-left: 180px;
-	height:
 }
 
 #header h1 {
@@ -31,6 +30,10 @@
 #content {
     text-align: justify;
     float: left;
+}
+
+#content img {
+  width: 100%
 }
 
 #rightbar {
@@ -110,14 +113,14 @@
 }
 
 #content code {
-	font: normal 12px "bitstream vera sans mono", monaco "lucida console", "courier new", courier, serif;
+	font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
 }
 
 #content pre {
 	color: #63FF00;
 	background: #000;
 	overflow: auto;
-	font: normal 12px "bitstream vera sans mono", monaco "lucida console", "courier new", courier, serif;
+	font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
 	margin: 0.9em 0; padding: 8px;
 }
 
@@ -384,45 +387,6 @@
 /*--------------------------------------------------------------
  Footer
  --------------------------------------------------------------*/
-
-#footer {
-/*	border-top: 1px solid #ccc; */
-	font-size: 90%;
-}
-
-#footer a:link,
-#footer a:visited {
-	color: #000;
-}
-
-#footer a:hover,
-#footer a:active {
-	color: #fff;
-	background: #000;
-}
-
-#footer hr {
-	display: none;
-}
-
-#footer p {
-	width: 40%;
-	float: left;
-	margin: 0; padding: 0;
-}
-
-#footer ul {
-	width: 40%;
-	margin: 0; padding: 0;
-	list-style-type: none;
-	text-align: right;
-	float: right;
-}
-
-#footer li {
-	margin: 0; padding: 0 0 0 1em;
-	display: inline;
-}
 
 .pagination {
 	clear: both;
