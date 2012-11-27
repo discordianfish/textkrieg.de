@@ -1,7 +1,7 @@
 .tweets {
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -9,18 +9,16 @@
  --------------------------------------------------------------*/
 
 #header {
-	margin-left: 180px;
+  margin-left: 180px;
 }
 
 #header h1 {
-	letter-spacing: -1px;
-	margin: 0;
-/*	float: left; */
+  letter-spacing: -1px;
+  margin: 0;
 }
 
 #header h2 {
-	margin: 2.5em 0 0 0.8em;
-/*	float: left; */
+  margin: 2.5em 0 0 0.8em;
 }
 
 /*--------------------------------------------------------------
@@ -28,8 +26,8 @@
  --------------------------------------------------------------*/
 
 #content {
-    text-align: justify;
-    float: left;
+  text-align: justify;
+  float: left;
 }
 
 #content img {
@@ -37,11 +35,11 @@
 }
 
 #rightbar {
-    text-align: justify;
+  text-align: justify;
 }
 
 #rightbar .atomentry {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 #content h1,
@@ -52,243 +50,242 @@
 }
 
 #content h1 {
-    font-weight: 900;
-    font-size: 30pt;
-    line-height: 30pt;
+  font-weight: 900;
+  font-size: 30pt;
+  line-height: 30pt;
 }
 
 #content h1 span a {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 #content h2 {
-	font-size: 22px;
-	margin: 0 0 0.3em;
+  font-size: 22px;
+  margin: 0 0 0.3em;
 }
 
 #content h3 {
-	font-size: 20px;
-	margin: 1.2em 0 0.3em;
+  font-size: 20px;
+  margin: 1.2em 0 0.3em;
 }
 
 #content h4 {
-	font-size: 18px;
-	margin: 1.2em 0 0.3em;
-	border-bottom: 1px dotted #bbb;
+  font-size: 18px;
+  margin: 1.2em 0 0.3em;
+  border-bottom: 1px dotted #bbb;
 }
 
 #content h5 {
-	font-size: 18px;
-	background: #ffd;
-	margin: 1.2em 0 0.3em;
-	border-bottom: 1px dotted #aaa;
+  font-size: 18px;
+  background: #ffd;
+  margin: 1.2em 0 0.3em;
+  border-bottom: 1px dotted #aaa;
 }
 
 #content p {
-/*	line-height: 15px; */
-    padding: 0;
-	margin: 0;
-    margin-bottom: 1em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
 #content ul,
 #content ol {
-	margin: 1em;
-	padding:0;
+  margin: 1em;
+  padding:0;
 }
 
 #content ul {
-	list-style-type: square;
+  list-style-type: square;
 }
 
 #content li {
-	line-height: 15px;
-	margin: 0 0 0 1em; padding: 0;
+  line-height: 15px;
+  margin: 0 0 0 1em; padding: 0;
 }
 
 #content blockquote {
-	color: #555;
-	border-left: 5px solid #ccc;
-	margin: 1.3em 1em; padding: 0 1em;
+  color: #555;
+  border-left: 5px solid #ccc;
+  margin: 1.3em 1em; padding: 0 1em;
 }
 
 #content code {
-	font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
+  font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
 }
 
 #content pre {
-	color: #63FF00;
-	background: #000;
-	overflow: auto;
-	font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
-	margin: 0.9em 0; padding: 8px;
+  color: #63FF00;
+  background: #000;
+  overflow: auto;
+  font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
+  margin: 0.9em 0; padding: 8px;
 }
 
 /* Article Entries - class names based on http://microformats.org/wiki/hatom] */
 .atomentry p a { border-bottom: 1px dotted black }
 #content .atomentry {
-	margin: 0.5em;
-	margin-bottom: 1em;
+  margin: 0.5em;
+  margin-bottom: 1em;
 }
 
 .atomentry .title {
-	margin: 0;
-	font-size: 16px;
-	font-weight: normal;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 #content #index .atomentry .title {
-	font-size: 14px;
-	margin: 0;
-	height: 30px;
-	overflow: hidden;
+  font-size: 14px;
+  margin: 0;
+  height: 30px;
+  overflow: hidden;
 }
 
 #rightbar .atomentry .title {
-        font-size: 14px;
-        margin: 0;
-        height: 30px;
-        overflow: hidden;
+  font-size: 14px;
+  margin: 0;
+  height: 30px;
+  overflow: hidden;
 }
 
 #content .atomentry .title a {
-    color: #aaa;
+  color: #aaa;
 }
 
 #content .atomentry .title a:visited {
-	color: #111;
-	text-decoration: none;
+  color: #111;
+  text-decoration: none;
 }
 
 #content .atomentry .title a:hover,
 #content .atomentry .title a:active {
-	color: #000;
-	background: transparent;
+  color: #000;
+  background: transparent;
 }
 
 #content .atomentry .title .comment_count { color: #eee; }
 
 
 #content .atomentry .author {
-	color: #bbb;
+  color: #bbb;
 }
 #content #index .atomentry .author {
-	margin: 0;
+  margin: 0;
 }
 
 #rightbar .atomentry .author { 
-        margin: 0;
+  margin: 0;
 }
 
 #content .atomentry .author cite a,
 #content .atomentry .author cite a:hover { /* author mailto: link (if any) */
-	color: #aaa; background: transparent;
-	text-decoration: none;
+  color: #aaa; background: transparent;
+  text-decoration: none;
 }
 
 #content .atomentry .author abbr { /* posted date */
-	font-size: 10px;
-	color: #111;
+  font-size: 10px;
+  color: #111;
 }
 
 #content .atomentry .content {}
 
 #content .atomentry ul.meta {
-	font-size: 12px;
-	background: #eee;
-	margin: 0; padding: 5px 5px 0px 5px;
-	border: 1px solid #ddd;
-	list-style-type: none;
+  font-size: 12px;
+  background: #eee;
+  margin: 0; padding: 5px 5px 0px 5px;
+  border: 1px solid #ddd;
+  list-style-type: none;
 }
 
 #content .atomentry ul.meta li {
-	margin: 0; padding: 0;
-    display: inline;
+  margin: 0; padding: 0;
+  display: inline;
 }
 
 #content .atomentry ul.meta li.comments {
-    float: right;
+  float: right;
 }
 
 #content .atomentry .meta a:link,
 #content .atomentry .meta a:visited {
-	color: #555;
+  color: #555;
 }
 
 #content .atomentry .meta a:hover,
 #content .atomentry .meta a:active  {
-	color: #fff;
+  color: #fff;
 }
 
 
 /* Comments and Trackbacks */
 #content ol.comments,
 #content ol.trackbacks {
-	list-style-type: none;
-	margin: 0; padding: 0;
+  list-style-type: none;
+  margin: 0; padding: 0;
 }
 
 #content .comment,
 #content .trackback {
-	border: 2px solid #ddd;
-	margin: 0 0 1.5em; padding: 1em;
+  border: 2px solid #ddd;
+  margin: 0 0 1.5em; padding: 1em;
 }
 
 #content .comment.preview {
-	background: #ffc;
-	border: 3px solid #fab444;
+  background: #ffc;
+  border: 3px solid #fab444;
 }
 
 #content .comment   .author,
 #content .trackback .author {
-	font-weight: bold;
-	margin-bottom: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 #content .comment   .author cite,
 #content .trackback .author cite {
-	font-size: 16px;
-	letter-spacing: -1px;
+  font-size: 16px;
+  letter-spacing: -1px;
 }
 
 #content .comment   .author abbr,
 #content .trackback .author abbr { color: #999; }
 
 #content .comment .author .gravatar {
-	margin: 0 0 0.5em 0.5em;
-	float: right;
+  margin: 0 0 0.5em 0.5em;
+  float: right;
 }
 
 /* uncomment to enable a default gravatar
 #content .comment .author div {
-	margin: 0 0 0.5em 0.5em;
- 	width: 60px; height: 60px;
-	background: url(../../images/theme/gravatar.gif) no-repeat left top;
-	float: right;
+  margin: 0 0 0.5em 0.5em;
+  width: 60px; height: 60px;
+  background: url(../../images/theme/gravatar.gif) no-repeat left top;
+  float: right;
 }*/
 
 
 #content form.comments {
-	background: #f2f2f2;
-	border-top: 1px solid #ddd;
-	padding: 1em 0.5em;
+  background: #f2f2f2;
+  border-top: 1px solid #ddd;
+  padding: 1em 0.5em;
 }
 
 #content form.comments fieldset {
-	border: none;
+  border: none;
 }
 
 #content form.comments legend {
-	display: none;
+  display: none;
 }
 
 #content form.comments label {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #content form.comments textarea {
-	width: 90%; height: 150px;
-	padding: 3px;
+  width: 90%; height: 150px;
+  padding: 3px;
 }
 
 /*--------------------------------------------------------------
@@ -298,90 +295,90 @@
 /* see sidebar.css */
 
 #sidebar {
-	background-color: white;
-	height: 100%;
+  background-color: white;
+  height: 100%;
 }
 #sidebar h3 a:hover,
 #sidebar h3 a:active {
-/*	background: transparent; text-decoration: underline; */
+/*  background: transparent; text-decoration: underline; */
 }
 
 #sidebar ul {
-	list-style-type: none;
-	margin: 2em 0 2em; padding: 0;
+  list-style-type: none;
+  margin: 2em 0 2em; padding: 0;
 }
 
 #sidebar li {
-	margin: 0;
+  margin: 0;
 }
 
 #sidebar em { font-style: normal; }
 
 /* Live-search and results */
 #sidebar .search p {
-	margin: 0;
+  margin: 0;
 }
 
 #sidebar .search p input {
-	font-size: 11px; width: 92%;
+  font-size: 11px; width: 92%;
 }
 
 #sidebar .search .loading {
-	background: url(../../images/theme/spinner.gif) no-repeat left 50%;
-	margin: 1em 0; padding: 0 0 0 20px;
-	height: 15px;
+  background: url(../../images/theme/spinner.gif) no-repeat left 50%;
+  margin: 1em 0; padding: 0 0 0 20px;
+  height: 15px;
 }
 
 #sidebar .search .results {
-	margin: 0 0 1.25em;
+  margin: 0 0 1.25em;
 }
 
 #sidebar .search .results h3 {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 #sidebar .search .results p {
-	margin: 0 0 0.5em;
+  margin: 0 0 0.5em;
 }
 
 #sidebar .search .results ul {
-	margin: 0; padding: 3px;
+  margin: 0; padding: 3px;
 }
 
 #sidebar .search .results li { background: #ffc; padding: 0.2em; }
 
 #sidebar .search .results a:link,
 #sidebar .search .results a:visited {
-	color: #222;
+  color: #222;
 }
 
 #sidebar .search .results a:hover,
 #sidebar .search .results a:active  {
-	color: #fff;
+  color: #fff;
 }
 
 /* Flickr sidebar-node */
 #sidebar #flickr {
-	margin: 0 0 2em;
-	clear: both;
+  margin: 0 0 2em;
+  clear: both;
 }
 
 #sidebar #flickr div {
 }
 
 #sidebar #flickr img {
-	margin: 0 0 5px;
-	padding: 5px;
-	border: 1px solid #ddd;
-	display: block;
+  margin: 0 0 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  display: block;
 }
 
 #sidebar #flickr img:hover {
-	background: #ffc;
+  background: #ffc;
 }
 
 #sidebar #flickr a {
-	border: none;
+  border: none;
 }
 
 /*--------------------------------------------------------------
@@ -389,11 +386,11 @@
  --------------------------------------------------------------*/
 
 .pagination {
-	clear: both;
+  clear: both;
 }
 
 /* gallery */
 #gallery
 {
-    text-align: center;
+  text-align: center;
 }

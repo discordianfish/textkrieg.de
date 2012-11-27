@@ -1,7 +1,7 @@
 #sidebar li {
-	display: inline;
-	border-right: 1px solid black;
-	margin-right: 1em;
+  display: inline;
+  border-right: 1px solid black;
+  margin-right: 1em;
 }
 
 #content {
@@ -12,5 +12,5 @@
 }
 
 #sidebar h1 {
-	display: inline
+  display: inline
 }

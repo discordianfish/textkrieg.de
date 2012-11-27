@@ -1,59 +1,53 @@
 html {
-    background-color: #fff;
-    min-width: 660px;
+  background-color: #fff;
+  min-width: 660px;
 }
 
 #rightbar .atomentry {
-    display: inline-block;
-    vertical-align: top;
-    width: 240px;
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
 }
+
 #index .atomentry {
-    display: inline-block;
-    vertical-align: top;
-    width: 240px;
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
 }
 
 /* page */
 #viewpage {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 /* comments */
 #comments_div {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 #rightbar img { width: 100% }
 
 #viewpage img
 {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #sidebar {
-    position: fixed;
-    width: 130px;
+  position: fixed;
+  width: 130px;
 }
 
-
 #footer {
-	height: 40px;
-	margin: 10px 0 0; padding: 10px 0 0;
-	clear:left;
+  height: 40px;
+  margin: 10px 0 0; padding: 10px 0 0;
+  clear:left;
 }
 
 /*--------------------------------------------------------------
  Sidebar Alignment: you can have left or right
  --------------------------------------------------------------*/
 
-/* BEGIN: Left Sidebar */
-#sidebar {
-/*	float: left; text-align: left; */
-/*	padding-right: 20px; */
-}
-
 #content {
     margin-left: 150px;
 }
-/* END: Left Sidebar */

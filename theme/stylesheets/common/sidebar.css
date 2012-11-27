@@ -2,29 +2,33 @@
  Sidebar
  --------------------------------------------------------------*/
 #sidebar {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 #sidebar h1 {
-    letter-spacing: -3pt;
-    font-family: "arial black",arial,helvetica,sans-serif;
-    text-align: left;
-    font-weight: 700;
-    font-size: 30pt;
-    margin: 0px;
-	line-height: 33pt;
+  letter-spacing: -3pt;
+  font-family: "arial black",arial,helvetica,sans-serif;
+  text-align: left;
+  font-weight: 700;
+  font-size: 30pt;
+  margin: 0px;
+  line-height: 33pt;
 }
+
 #sidebar h3 a:link,
 #sidebar h3 a:visited {
-    color: #000; text-decoration: none;
+  color: #000; text-decoration: none;
 }
+
 #rightbar h3 { margin: 0 }
+
 #rightbar li {
-    margin-bottom: 1em;
-    list-style-type: none;
+  margin-bottom: 1em;
+  list-style-type: none;
 }
+
 #rightbar ul {
-    margin: 0; padding: 0;
+  margin: 0; padding: 0;
 }
 
 
